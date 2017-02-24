@@ -1,0 +1,43 @@
+/*This is a sample style sheet that can be used for printing*/
+
+h1 {
+  font-size: 70%;
+  padding: 0;
+  margin: 0
+}
+
+body {
+  padding: 0;
+  margin: 0
+}
+nav, footer, video, figcaption { 
+  display: none; 
+}
+
+a:after {
+  content: " (" attr(href) ")";
+  font-size: 80%;
+}
+
+a[href^="http://"]:after, 
+a[href^="https://"]:after {
+  content: " (" attr(href) ")";
+}
+
+a[href^="#"]:after {
+  content: "";
+}
+
+img:after {
+  content: "HELLO!!"
+}
+
+.container, article {
+  width: 100%;
+}
+
+figure {
+  float: left;
+  margin: 5px;
+  padding: 5px
+}
